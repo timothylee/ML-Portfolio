@@ -1,0 +1,41 @@
+'''
+Write up an explanation for each question in a single separate text file (called "explanations.txt"). 
+Your paragraph should not be a detailed walkthrough of the code you provided, but provide your reasoning 
+behind decisions made in the code. For example, why did you use that data structure? 
+You also need to explain the efficiency (time and space) of your solution.
+'''
+
+Question 1
+The anagrams are stored as a list to enable sorting which is crucial for an elegant solution.
+
+Space complexity: O(1)
+Time complexity: O(n) due to looping through the array.
+
+Question 2
+Manacher's algorithm works by using reflection around centers to efficienctly loop through and find palindromes.
+
+Space complexity: O(1)
+Time complexity; O(n^2) due to the loop in the loop.
+
+Question 3
+Kruskal's algorithm was used for this problem. It is a greedy algorithm 
+in graph theory as it finds a minimum spanning tree for a connected 
+weighted graph adding increasing cost arcs at each step.
+
+Kruskal's algorithm's 
+Time complexity: O(E log E) 
+Space complexity: O(n)
+
+Question 4
+Logic behind least comment ancestor:
+- If both n1 and n2 are smaller than root, then LCA lies in left
+- If both n1 and n2 are greater than root, then LCA lies in right
+
+Space complexity: O(1) to save the tree
+Time complexity: O(n) due to looping twice through the array.
+
+Question 5
+Iterate through two linked list pointers to use a reference pointer to find the mth value from the end of the main pointer.
+
+Space complexity: O(1) to save the linked list
+Time complexity: O(n) due to looping through the array twice.
